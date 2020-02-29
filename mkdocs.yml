@@ -1,5 +1,5 @@
 site_name: Python UNLP Documentación
-theme: readthedocs
+theme: 'material'
 nav:
   - Home: index.md
   - Instalar Git: instalar_git.md
