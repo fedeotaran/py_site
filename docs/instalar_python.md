@@ -69,8 +69,14 @@ $ pyenv install 3.6.8
 Guía completa en el readme del
 [repositorio de pyenv](https://github.com/pyenv/pyenv).
 
-### Instalación en Windows
+## Instalación en Windows
+
+### Desde instalador
 
 Descarga el instalador [aquí](https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe)
 
 Otros instaladores: https://www.python.org/downloads/release/python-368/
+
+### Utilizando Conda
+
+TODO

@@ -1,2 +1,6 @@
 site_name: Python UNLP Documentación
 theme: readthedocs
+nav:
+  - Home: index.md
+  - Instalar Git: instalar_git.md
+  - Instalar Python: instalar_python.md
