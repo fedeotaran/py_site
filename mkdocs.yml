@@ -4,6 +4,8 @@ nav:
   - Home: index.md
   - Instalar Git: instalar_git.md
   - Instalar Python: instalar_python.md
+  - Entornos virtuales: entornos_virtuales.md
+  - Manejo de Paquetes: manejo_de_paquetes.md
 markdown_extensions:
   - toc:
       permalink: true
