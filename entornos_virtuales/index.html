@@ -182,18 +182,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../instalar_git/" title="Instalar Git" class="md-nav__link">
-      Instalar Git
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../instalar_python/" title="Instalar Python" class="md-nav__link">
       Instalar Python
     </a>
@@ -235,6 +223,13 @@
         <li class="md-nav__item">
   <a href="#como-crear-un-entorno-virtual" class="md-nav__link">
     ¿Cómo crear un entorno virtual?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-mi-entorno-virtual" class="md-nav__link">
+    ¿Como usar mi entorno virtual?
   </a>
   
 </li>
@@ -285,6 +280,13 @@
         <li class="md-nav__item">
   <a href="#como-crear-un-entorno-virtual" class="md-nav__link">
     ¿Cómo crear un entorno virtual?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-mi-entorno-virtual" class="md-nav__link">
+    ¿Como usar mi entorno virtual?
   </a>
   
 </li>
@@ -351,6 +353,31 @@ quieren arrancar el proyecto. En nuestro caso la versión <code>3.6.8</code></p>
 <p>Se pueden asegurar ejecutando:</p>
 <p><code>$ python --version</code></p>
 </div>
+<p>Ya estamos listos para usar nuestro entorno virtual. Tanto la versión de Python
+con las librerías se van a almacenar dentro del directorio <code>venv</code> creado.</p>
+<h2 id="como-usar-mi-entorno-virtual">¿Como usar mi entorno virtual?<a class="headerlink" href="#como-usar-mi-entorno-virtual" title="Permanent link">&para;</a></h2>
+<p>Para activar el entorno ejecutamos</p>
+<div class="codehilite"><pre><span></span><code>. venv/bin/activate
+</code></pre></div>
+
+
+<p>Ahora si localizamos donde está el ejecutable de Python que utilizamos
+veremos que es el que está dentro del directorio virtual</p>
+<div class="codehilite"><pre><span></span><code>which python
+&lt;directorio_del_proyecto&gt;/venv/bin/python
+</code></pre></div>
+
+
+<p>Es necesario desactivar si queremos volver a usar el python que instalamos
+globalmente</p>
+<div class="codehilite"><pre><span></span><code>deactivate
+</code></pre></div>
+
+
+<p>Ahora si necesitamos instalar una librería tenemos que activar el entorno y
+usar <code>pip</code></p>
+<div class="codehilite"><pre><span></span><code>pip install numpy
+</code></pre></div>
                 
                   
                 
