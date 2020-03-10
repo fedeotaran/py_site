@@ -15,19 +15,21 @@ podemos instalarla fácilmenten:
 1. Descargar el contenido de [este archivo](https://bootstrap.pypa.io/get-pip.py)
 2. Ejecutar `python <archivo_anterior_descargardo>.py`
 
+Guía completa [aquí](https://pip.pypa.io/en/stable/installing/)
+
 ## ¿Cómo usar `pip`?
 
 Para instalar una librería con `pip` ejecutamos:
 
 ```bash
-pip install PySimpleGUI
+pip install art
 ```
 
 Esto va a instalar la ultipa versión. Si queremos alguna versión en particular
 ejecutamos:
 
 ```bash
-pip install PySimpleGUI==4.16.0
+pip install art==4.5
 ```
 
 Deberíamos hacer esto por cada librería que querramos instalar en el sistema.
@@ -38,7 +40,7 @@ siguiente manera:
 
 ```python
 # File: requirements.txt
-PySimpleGUI==4.16
+art==4.5
 numpy==1.18.1
 pandas==1.0.1
 ```

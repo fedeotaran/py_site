@@ -31,17 +31,7 @@ La herramienta que vamos a usar es [`pyenv`](git@github.com:pyenv/pyenv.git)
 
 ## Linux y MacOS
 
-### Instalación con brew (MacOS)
-
-Se puede instalar `pyenv` usando el manejador de paquetes
-[Homebrew](https://brew.sh/) para MacOS.
-
-```bash
-brew update
-brew install pyenv
-```
-
-### Instalación con Git (Linux y MacOS)
+### Instalación con Git (Linux y MacOS) RECOMENDADA
 
 Hacer el checkout de `pyenv` en el directorio donde quieras que se instale.
 Un buen lugar puede ser `$HOME/.pyenv`.
@@ -101,11 +91,27 @@ o como versión local en el directorio que nos encontremos
 pyenv local 3.6.8
 ```
 
+### Instalación con brew (MacOS)
+
+Se puede instalar `pyenv` usando el manejador de paquetes
+[Homebrew](https://brew.sh/) para MacOS.
+
+```bash
+brew update
+brew install pyenv
+```
+
 ## Instalación en Windows
 
 ### Desde instalador
 
 Descarga el instalador [aquí](https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe)
+
+!!! warning
+    Tener en cuenta de seleccionar el box de abajo para agregar el ejecutable de
+    Python al PATH del sistema.
+
+    ![Python Windows Installer](img/python-win.png)
 
 Otros instaladores: https://www.python.org/downloads/release/python-368/
 
