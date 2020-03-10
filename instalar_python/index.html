@@ -224,15 +224,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#instalacion-con-brew-macos" class="md-nav__link">
-    Instalación con brew (MacOS)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalacion-con-git-linux-y-macos" class="md-nav__link">
-    Instalación con Git (Linux y MacOS)
+  <a href="#instalacion-con-git-linux-y-macos-recomendada" class="md-nav__link">
+    Instalación con Git (Linux y MacOS) RECOMENDADA
   </a>
   
 </li>
@@ -240,6 +233,13 @@
           <li class="md-nav__item">
   <a href="#uso-de-pyenv" class="md-nav__link">
     Uso de pyenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-brew-macos" class="md-nav__link">
+    Instalación con brew (MacOS)
   </a>
   
 </li>
@@ -293,8 +293,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../entornos_virtuales/" title="Entornos virtuales" class="md-nav__link">
-      Entornos virtuales
+    <a href="../manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
+      Manejo de Paquetes
     </a>
   </li>
 
@@ -305,8 +305,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
-      Manejo de Paquetes
+    <a href="../entornos_virtuales/" title="Entornos virtuales" class="md-nav__link">
+      Entornos virtuales
     </a>
   </li>
 
@@ -347,15 +347,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#instalacion-con-brew-macos" class="md-nav__link">
-    Instalación con brew (MacOS)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalacion-con-git-linux-y-macos" class="md-nav__link">
-    Instalación con Git (Linux y MacOS)
+  <a href="#instalacion-con-git-linux-y-macos-recomendada" class="md-nav__link">
+    Instalación con Git (Linux y MacOS) RECOMENDADA
   </a>
   
 </li>
@@ -363,6 +356,13 @@
           <li class="md-nav__item">
   <a href="#uso-de-pyenv" class="md-nav__link">
     Uso de pyenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-brew-macos" class="md-nav__link">
+    Instalación con brew (MacOS)
   </a>
   
 </li>
@@ -438,15 +438,7 @@ este caso vamos a instalar la versión específica de Python que utilicemos.</p>
 la misma versión de Python.</p>
 <p>La herramienta que vamos a usar es <a href="git@github.com:pyenv/pyenv.git"><code>pyenv</code></a></p>
 <h2 id="linux-y-macos">Linux y MacOS<a class="headerlink" href="#linux-y-macos" title="Permanent link">&para;</a></h2>
-<h3 id="instalacion-con-brew-macos">Instalación con brew (MacOS)<a class="headerlink" href="#instalacion-con-brew-macos" title="Permanent link">&para;</a></h3>
-<p>Se puede instalar <code>pyenv</code> usando el manejador de paquetes
-<a href="https://brew.sh/">Homebrew</a> para MacOS.</p>
-<div class="codehilite"><pre><span></span><code>brew update
-brew install pyenv
-</code></pre></div>
-
-
-<h3 id="instalacion-con-git-linux-y-macos">Instalación con Git (Linux y MacOS)<a class="headerlink" href="#instalacion-con-git-linux-y-macos" title="Permanent link">&para;</a></h3>
+<h3 id="instalacion-con-git-linux-y-macos-recomendada">Instalación con Git (Linux y MacOS) RECOMENDADA<a class="headerlink" href="#instalacion-con-git-linux-y-macos-recomendada" title="Permanent link">&para;</a></h3>
 <p>Hacer el checkout de <code>pyenv</code> en el directorio donde quieras que se instale.
 Un buen lugar puede ser <code>$HOME/.pyenv</code>.</p>
 <div class="codehilite"><pre><span></span><code>git clone https://github.com/pyenv/pyenv.git ~/.pyenv
@@ -502,9 +494,23 @@ el comando según corresponda.</p>
 </code></pre></div>
 
 
+<h3 id="instalacion-con-brew-macos">Instalación con brew (MacOS)<a class="headerlink" href="#instalacion-con-brew-macos" title="Permanent link">&para;</a></h3>
+<p>Se puede instalar <code>pyenv</code> usando el manejador de paquetes
+<a href="https://brew.sh/">Homebrew</a> para MacOS.</p>
+<div class="codehilite"><pre><span></span><code>brew update
+brew install pyenv
+</code></pre></div>
+
+
 <h2 id="instalacion-en-windows">Instalación en Windows<a class="headerlink" href="#instalacion-en-windows" title="Permanent link">&para;</a></h2>
 <h3 id="desde-instalador">Desde instalador<a class="headerlink" href="#desde-instalador" title="Permanent link">&para;</a></h3>
 <p>Descarga el instalador <a href="https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe">aquí</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Tener en cuenta de seleccionar el box de abajo para agregar el ejecutable de
+Python al PATH del sistema.</p>
+<p><img alt="Python Windows Installer" src="../img/python-win.png" /></p>
+</div>
 <p>Otros instaladores: https://www.python.org/downloads/release/python-368/</p>
 <h2 id="conclusion">Conclusión<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
 <p>Ahora tenemos la versión de Python que necesitamos en nuestro sistema y estamos
@@ -545,13 +551,13 @@ listo para utilizarlo.</p>
           </a>
         
         
-          <a href="../entornos_virtuales/" title="Entornos virtuales" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../manejo_de_paquetes/" title="Manejo de Paquetes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Entornos virtuales
+                Manejo de Paquetes
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

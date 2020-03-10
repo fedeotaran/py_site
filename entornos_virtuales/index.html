@@ -192,6 +192,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
+      Manejo de Paquetes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -242,18 +254,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
-      Manejo de Paquetes
-    </a>
   </li>
 
     
@@ -312,7 +312,7 @@
 <p>Virtualenv es una herramienta usada para crear un ambiente aislado de Python.
 Este ambiente tiene su propio directorio de instalación que no comparte
 librerías con otros ambientes virtualenv.</p>
-<p>Esto tiene la ventaja que separar las librerías específicas que necesitamos en
+<p>Esto tiene la ventaja que separa las librerías específicas que necesitamos en
 cada entorno virtual.</p>
 <p>Es útil hacer esta separación porque en el desarrollo de software es muy común
 que querramos usar en distintos proyectos distintas versiones de la misma
@@ -321,10 +321,10 @@ librería.</p>
 versión de <code>numpy</code> que ahora no es la última. Para ese proyecto puede estar
 perfecta esa versión y algunas veces puede ser peligroso actualizar una
 librería. Ahora si vamos a arrancar un nuevo proyecto seguramente queremos poder
-usar la última versión de numpy.</p>
+usar la última versión de <code>numpy</code>.</p>
 <p>La solución que nos da virtualenv es crear la cantidad de directorios virtuales
-que querramos con su versión de Python y sus librerías externas propias
-aisladas.</p>
+que querramos con su versión de Python y sus librerías externas de forma
+aislada.</p>
 <p>Una práctica muy común con virtualenv es tener un entorno virtual por proyecto
 aislando cada proyecto y evitando cualquier problema de compatibilidad.</p>
 <h2 id="como-crear-un-entorno-virtual">¿Cómo crear un entorno virtual?<a class="headerlink" href="#como-crear-un-entorno-virtual" title="Permanent link">&para;</a></h2>
@@ -336,7 +336,8 @@ la siguiente manera:</p>
 
 <p>Para crear un entorno virtual primero tenemos que ubicarnos en el directorio
 donde está el código de nuestra aplicación</p>
-<div class="codehilite"><pre><span></span><code><span class="nb">cd</span> &lt;path_del_proyecto&gt;
+<div class="codehilite"><pre><span></span><code>mkdir mi_proyecto
+<span class="nb">cd</span> mi_proyecto
 </code></pre></div>
 
 
@@ -364,7 +365,7 @@ con las librerías se van a almacenar dentro del directorio <code>venv</code> cr
 <p>Ahora si localizamos donde está el ejecutable de Python que utilizamos
 veremos que es el que está dentro del directorio virtual</p>
 <div class="codehilite"><pre><span></span><code>which python
-&lt;directorio_del_proyecto&gt;/venv/bin/python
+mi_proyecto/venv/bin/python
 </code></pre></div>
 
 
@@ -399,7 +400,7 @@ usar <code>pip</code></p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../instalar_python/" title="Instalar Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../manejo_de_paquetes/" title="Manejo de Paquetes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -408,25 +409,11 @@ usar <code>pip</code></p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Instalar Python
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../manejo_de_paquetes/" title="Manejo de Paquetes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 Manejo de Paquetes
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
