@@ -239,7 +239,7 @@
         
           <li class="md-nav__item">
   <a href="#en-windows" class="md-nav__link">
-    En windows
+    En Windows
   </a>
   
 </li>
@@ -374,7 +374,7 @@
         
           <li class="md-nav__item">
   <a href="#en-windows" class="md-nav__link">
-    En windows
+    En Windows
   </a>
   
 </li>
@@ -450,7 +450,7 @@ sudo yum install git
 </code></pre></div>
 
 
-<h3 id="en-windows">En windows<a class="headerlink" href="#en-windows" title="Permanent link">&para;</a></h3>
+<h3 id="en-windows">En Windows<a class="headerlink" href="#en-windows" title="Permanent link">&para;</a></h3>
 <p>Descargar en instalar de <a href="https://gitforwindows.org/">gitforwindows</a> o de
 <a href="https://git-scm.com/download/win">git-scm</a>. Tener en cuenta que en la cátedra
 vamos a utilizar <code>GitBash</code> por lo cual deben asegurarse que se instale.</p>
@@ -478,7 +478,7 @@ proyecto. Por eso en primer lugar lo que vamos a hacer es crear un directorio.</
 </code></pre></div>
 
 
-<p>[Salida de comando git init]</p>
+<p><img alt="Git init" src="../img/1_git_init.png" /></p>
 <p>Podemos ver que se creó en este directorio una carpeta oculta con el nombre
 <code>.git/</code>. Esto significa que este directirio está habilitado para ser versionado
 con <code>Git</code>. Ya estamos listos para crear nuestro primer archivo.</p>
@@ -486,7 +486,7 @@ con <code>Git</code>. Ya estamos listos para crear nuestro primer archivo.</p>
 </code></pre></div>
 
 
-<p>[imagen del la edición]</p>
+<p><img alt="Create app" src="../img/2_create_app.png" /></p>
 <p>Guardamos el archivo en el directorio de nuestro proyecto.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -495,7 +495,7 @@ otro editor para trabajar como VsCode, Atom, SumblimeText, PyCharm, etc.</p>
 </div>
 <p>Ahora si ejecutamos <code>git status</code> vamos a ver que <code>Git</code> detecto que hay un nuevo
 archivo que aún no está versionado en nuestro directorio.</p>
-<p>[Imagen de un git status]</p>
+<p><img alt="Git status" src="../img/3_git_status.png" /></p>
 <p>Para agregar este archivo al versionado de <code>Git</code> debemos hacer:</p>
 <div class="codehilite"><pre><span></span><code>git add app.py
 </code></pre></div>
@@ -503,7 +503,7 @@ archivo que aún no está versionado en nuestro directorio.</p>
 
 <p>Volvemos a ejecutar el comando <code>git status</code> para ver que información nos da
 <code>Git</code> ahora de este archivo.</p>
-<p>[Imagen de git status luego de hacer el add]</p>
+<p><img alt="Git status2" src="../img/4_git_status.png" /></p>
 <p>Para hacer estos cambios efectivos es necesario crear un commit.</p>
 <div class="codehilite"><pre><span></span><code>git commit -m <span class="s2">&quot;Creación de archivo inicial :smile:&quot;</span>
 </code></pre></div>
@@ -521,7 +521,7 @@ datos asociados al commit como autores.</p>
 </div>
 <p>En este momento tenemos el primer commit en nuestro repositorio local.
 Podemos ver la lista de todos nuestros commits con el comando <code>git log</code>.</p>
-<p>[Imagen de git log]</p>
+<p><img alt="Git commit" src="../img/6_git_commit_log.png" /></p>
 <p>Ahora queremos compartir nuestro código y para esto es necesario subirlo a un
 repositorio remoto. Para esto es necesario <a href="https://help.github.com/es/enterprise/2.17/user/github/getting-started-with-github/create-a-repo">crear un nuevo repositorio en
 <code>Github</code></a>.</p>
@@ -529,10 +529,11 @@ repositorio remoto. Para esto es necesario <a href="https://help.github.com/es/e
 <p class="admonition-title">Warning</p>
 <p>Tener en cuenta de <strong>NO CREAR</strong> el archivo <code>README.md</code> como sugiere la guía
 ya que va a complicar el subir nuestro código.</p>
+<p><img alt="Git Create Repo" src="../img/7_create_repo.png" /></p>
 </div>
 <p>Una vez creado el repositorio en <code>Github</code> tenemos que agregar ese repositorio
 remoto en nuestro repositorio <code>Git</code> local.</p>
-<div class="codehilite"><pre><span></span><code>git remote add origin 
+<div class="codehilite"><pre><span></span><code>git remote add origin git@github.com:fedeotaran/ejemplo_python.git
 </code></pre></div>
 
 
@@ -542,7 +543,7 @@ remoto en nuestro repositorio <code>Git</code> local.</p>
 
 
 <p>La salida de comando debería ser parecida a esta:</p>
-<p>[Imagen de la salida del push]</p>
+<p><img alt="Git push" src="../img/8_git_push.png" /></p>
 <p>Ahora nuestro código ya esta subido al repositorio.</p>
 <h3 id="comenzar-desde-un-reposotorio-ya-creado">Comenzar desde un reposotorio ya creado<a class="headerlink" href="#comenzar-desde-un-reposotorio-ya-creado" title="Permanent link">&para;</a></h3>
 <p>La sección anterior nos explica como crear un nuevo repositorio de <code>Git</code>, pero
@@ -566,8 +567,7 @@ a la hora de ejecutar el comando <code>git clone</code>.</p>
 <p class="admonition-title">¿Comó descargar el repo con otro nombre?</p>
 <p>Si queremos que la carpeta que genere sea con otro nombre distinta a la del
 repositorio hacemos:</p>
-<p><code>bash
-git clone https://github.com/fedeotaran/ejemplo_python.git otro_nombre</code></p>
+<p><code>git clone https://github.com/fedeotaran/ejemplo_python.git otro_nombre</code></p>
 </div>
 <p>El repositorio desgargado ya tiene toda la información de <code>Git</code> para comenzar.
 No es necesario hacer el <code>git init</code> dado que el repositorio ya creó otra
@@ -583,17 +583,17 @@ dentro del directorio.</p>
 </code></pre></div>
 
 
-<p>[Imagen con la modificación]</p>
+<p><img alt="Edit App" src="../img/9_edit_app.png" /></p>
 <p>Y ademas vamos a crear un nuevo archivo <code>README.md</code> para agregarle documentación
 a nuestro proyecto.</p>
 <div class="codehilite"><pre><span></span><code>vi README.md
 </code></pre></div>
 
 
-<p>[Imagen de creación de readme]</p>
+<p><img alt="Edit App" src="../img/10_create_readme.png" /></p>
 <p>Ahora si ejecutamos <code>git status</code> veremos cuales fueron las modificaciones que
 aplicamos a nuestro repositorio local.</p>
-<p>[imagen de salida del git status]</p>
+<p><img alt="Status code" src="../img/11_status.png" /></p>
 <p>Para sumar estos cambios a git ejecutamos <code>git add</code>.</p>
 <div class="codehilite"><pre><span></span><code>git add .
 </code></pre></div>
@@ -615,7 +615,7 @@ un nuevo commit.</p>
 </code></pre></div>
 
 
-<p>[Imagen de la subida de los nuesvos cambios]</p>
+<p><img alt="Push code" src="../img/12_push.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Tener en cuenta que no es necesario subir cada un commit, podemos acumular
