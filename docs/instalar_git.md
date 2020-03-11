@@ -4,7 +4,9 @@ Guía de Git
 En la explicación práctica hablamos sobre los conceptos de git. Aquí están las
 [diapositivas](https://docs.google.com/presentation/d/1pQyjBfV_tz7M2PCS3nvcnHsRaJmJaWhbYeIzzddTfVA/edit?usp=sharing).
 
-## Instalación en Debian-based
+## Instalación
+
+### En Debian-based
 
 ```bash
 sudo apt update
@@ -12,34 +14,33 @@ sudo apt upgrade
 sudo apt install git
 ```
 
-## Instalación en Red Hat-based
+### En Red Hat-based
 
 ```bash
 sudo yum upgrade
 sudo yum install git
 ```
 
-## Instalación en MacOS
+### En MacOS
 
 ```bash
 brew install git
 ```
 
-## Instalación en windows
+### En windows
 
 Descargar en instalar de [gitforwindows](https://gitforwindows.org/) o de
 [git-scm](https://git-scm.com/download/win). Tener en cuenta que en la cátedra
 vamos a utilizar `GitBash` por lo cual deben asegurarse que se instale.
 
-¿Cómo usar git?
-===============
+## ¿Cómo usar git?
 
 Vamos a ver dos formas para comenzar a trabajar con `Git`:
 
 - Creando un repositorio desde cero y agregando los archivos iniciales.
 - Descargando un proyecto ya creado y modificarlo.
 
-## Comenzar un repositorio desde cero
+### Comenzar un repositorio desde cero
 
 Con git podemos versionar cualquier directorio/carpeta donde comencemos nuestro
 proyecto. Por eso en primer lugar lo que vamos a hacer es crear un directorio.
@@ -144,7 +145,7 @@ La salida de comando debería ser parecida a esta:
 
 Ahora nuestro código ya esta subido al repositorio.
 
-## Comenzar desde un reposotorio ya creado
+### Comenzar desde un reposotorio ya creado
 
 La sección anterior nos explica como crear un nuevo repositorio de `Git`, pero
 cuando estamos trabajando en equipo es necesario que **sólo una persona**
