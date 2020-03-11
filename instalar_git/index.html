@@ -36,7 +36,7 @@
     
     
       
-        <title>Instalar git - Python UNLP Documentación</title>
+        <title>Guía de Git - Python UNLP Documentación</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#guia-de-instalacion-de-git" tabindex="0" class="md-skip">
+      <a href="#guia-de-git" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Instalar git
+                Guía de Git
               
             </span>
           
@@ -180,6 +180,77 @@
       
       
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Guía de Git
+      </label>
+    
+    <a href="./" title="Guía de Git" class="md-nav__link md-nav__link--active">
+      Guía de Git
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-debian-based" class="md-nav__link">
+    Instalación en Debian-based
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-red-hat-based" class="md-nav__link">
+    Instalación en Red Hat-based
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-macos" class="md-nav__link">
+    Instalación en MacOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-windows" class="md-nav__link">
+    Instalación en windows
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
 
   <li class="md-nav__item">
     <a href="../instalar_python/" title="Instalar Python" class="md-nav__link">
@@ -229,6 +300,43 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-debian-based" class="md-nav__link">
+    Instalación en Debian-based
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-red-hat-based" class="md-nav__link">
+    Instalación en Red Hat-based
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-macos" class="md-nav__link">
+    Instalación en MacOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-windows" class="md-nav__link">
+    Instalación en windows
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -240,8 +348,200 @@
               
                 
                 
-                <h1 id="guia-de-instalacion-de-git">Guía de instalación de Git<a class="headerlink" href="#guia-de-instalacion-de-git" title="Permanent link">&para;</a></h1>
-<p>TODO</p>
+                <h1 id="guia-de-git">Guía de Git<a class="headerlink" href="#guia-de-git" title="Permanent link">&para;</a></h1>
+<p>En la explicación práctica hablamos sobre los conceptos de git. Aquí están las
+<a href="https://docs.google.com/presentation/d/1pQyjBfV_tz7M2PCS3nvcnHsRaJmJaWhbYeIzzddTfVA/edit?usp=sharing">diapositivas</a>.</p>
+<h2 id="instalacion-en-debian-based">Instalación en Debian-based<a class="headerlink" href="#instalacion-en-debian-based" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>sudo apt update
+sudo apt upgrade
+sudo apt install git
+</code></pre></div>
+
+
+<h2 id="instalacion-en-red-hat-based">Instalación en Red Hat-based<a class="headerlink" href="#instalacion-en-red-hat-based" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>sudo yum upgrade
+sudo yum install git
+</code></pre></div>
+
+
+<h2 id="instalacion-en-macos">Instalación en MacOS<a class="headerlink" href="#instalacion-en-macos" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>brew install git
+</code></pre></div>
+
+
+<h2 id="instalacion-en-windows">Instalación en windows<a class="headerlink" href="#instalacion-en-windows" title="Permanent link">&para;</a></h2>
+<p>Descargar en instalar de <a href="https://gitforwindows.org/">gitforwindows</a> o de
+<a href="https://git-scm.com/download/win">git-scm</a>. Tener en cuenta que en la cátedra
+vamos a utilizar <code>GitBash</code> por lo cual deben asegurarse que se instale.</p>
+<h1 id="como-usar-git">¿Cómo usar git?<a class="headerlink" href="#como-usar-git" title="Permanent link">&para;</a></h1>
+<p>Vamos a ver dos formas para comenzar a trabajar con <code>Git</code>:</p>
+<ul>
+<li>Creando un repositorio desde cero y agregando los archivos iniciales.</li>
+<li>Descargando un proyecto ya creado y modificarlo.</li>
+</ul>
+<h2 id="comenzar-un-repositorio-desde-cero">Comenzar un repositorio desde cero<a class="headerlink" href="#comenzar-un-repositorio-desde-cero" title="Permanent link">&para;</a></h2>
+<p>Con git podemos versionar cualquier directorio/carpeta donde comencemos nuestro
+proyecto. Por eso en primer lugar lo que vamos a hacer es crear un directorio.</p>
+<div class="codehilite"><pre><span></span><code>mkdir ejemplo_python
+</code></pre></div>
+
+
+<p>El paso siguiente es moverme dentro del directorio para comenzar a trabajar.</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span> ejemplo_python
+</code></pre></div>
+
+
+<p>Ahora vamos a inicializar nuestro directorio como un directorio versionado por
+<code>Git</code>.</p>
+<div class="codehilite"><pre><span></span><code>git init
+</code></pre></div>
+
+
+<p>[Salida de comando git init]</p>
+<p>Podemos ver que se creó en este directorio una carpeta oculta con el nombre
+<code>.git/</code>. Esto significa que este directirio está habilitado para ser versionado
+con <code>Git</code>. Ya estamos listos para crear nuestro primer archivo.</p>
+<div class="codehilite"><pre><span></span><code>vi app.py
+</code></pre></div>
+
+
+<p>[imagen del la edición]</p>
+<p>Guardamos el archivo en el directorio de nuestro proyecto.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>En este caso utilizo el editor de texto vim. Les recomendamos que utilicen
+otro editor para trabajar como VsCode, Atom, SumblimeText, PyCharm, etc.</p>
+</div>
+<p>Ahora si ejecutamos <code>git status</code> vamos a ver que <code>Git</code> detecto que hay un nuevo
+archivo que aún no está versionado en nuestro directorio.</p>
+<p>[Imagen de un git status]</p>
+<p>Para agregar este archivo al versionado de <code>Git</code> debemos hacer:</p>
+<div class="codehilite"><pre><span></span><code>git add app.py
+</code></pre></div>
+
+
+<p>Volvemos a ejecutar el comando <code>git status</code> para ver que información nos da
+<code>Git</code> ahora de este archivo.</p>
+<p>[Imagen de git status luego de hacer el add]</p>
+<p>Para hacer estos cambios efectivos es necesario crear un commit.</p>
+<div class="codehilite"><pre><span></span><code>git commit -m <span class="s2">&quot;Creación de archivo inicial :smile:&quot;</span>
+</code></pre></div>
+
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Si tenemos una instalación nuevo de Git el sistema puede solicitar que
+configure mi nombre y mi mail para poder agregar esta información en el
+commit:</p>
+<p>[imagen que pide la configuración]</p>
+<p>Lo que tenemos que hacer es ejecutar los comandos que nos sugiere pero con
+nuestros datos personales. Esto es simplemente para que queden nuestros
+datos asociados al commit como autores.</p>
+</div>
+<p>En este momento tenemos el primer commit en nuestro repositorio local.
+Podemos ver la lista de todos nuestros commits con el comando <code>git log</code>.</p>
+<p>[Imagen de git log]</p>
+<p>Ahora queremos compartir nuestro código y para esto es necesario subirlo a un
+repositorio remoto. Para esto es necesario <a href="https://help.github.com/es/enterprise/2.17/user/github/getting-started-with-github/create-a-repo">crear un nuevo repositorio en
+<code>Github</code></a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Tener en cuenta de <strong>NO CREAR</strong> el archivo <code>README.md</code> como sugiere la guía
+ya que va a complicar el subir nuestro código.</p>
+</div>
+<p>Una vez creado el repositorio en <code>Github</code> tenemos que agregar ese repositorio
+remoto en nuestro repositorio <code>Git</code> local.</p>
+<div class="codehilite"><pre><span></span><code>git remote add origin 
+</code></pre></div>
+
+
+<p>Ahora ya estamos listos para subir los commits con nuestros cambios.</p>
+<div class="codehilite"><pre><span></span><code>git push -u origin master
+</code></pre></div>
+
+
+<p>La salida de comando debería ser parecida a esta:</p>
+<p>[Imagen de la salida del push]</p>
+<p>Ahora nuestro código ya esta subido al repositorio.</p>
+<h2 id="comenzar-desde-un-reposotorio-ya-creado">Comenzar desde un reposotorio ya creado<a class="headerlink" href="#comenzar-desde-un-reposotorio-ya-creado" title="Permanent link">&para;</a></h2>
+<p>La sección anterior nos explica como crear un nuevo repositorio de <code>Git</code>, pero
+cuando estamos trabajando en equipo es necesario que <strong>sólo una persona</strong>
+realice la creación del repositorio. El resto de los miembros del equipo tiene
+que realizar la descarga del repositorio y comenzar a trabajar.</p>
+<p>Para esto es necesario usar el comando <code>git clone</code>.</p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/&lt;username&gt;/&lt;reponame&gt;.git
+</code></pre></div>
+
+
+<p>En mi caso para el repositorio que acabo de crear sería:</p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/fedeotaran/ejemplo_python.git
+</code></pre></div>
+
+
+<p>Esto va a generar una nueva carpeta donde descargará el contenido del
+repositorio. La carpeta se creará en el directorio en donde estemos parados
+a la hora de ejecutar el comando <code>git clone</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">¿Comó descargar el repo con otro nombre?</p>
+<p>Si queremos que la carpeta que genere sea con otro nombre distinta a la del
+repositorio hacemos:</p>
+<p><code>bash
+git clone https://github.com/fedeotaran/ejemplo_python.git otro_nombre</code></p>
+</div>
+<p>El repositorio desgargado ya tiene toda la información de <code>Git</code> para comenzar.
+No es necesario hacer el <code>git init</code> dado que el repositorio ya creó otra
+persona.</p>
+<p>Ya estamos listos para comenzar a trabajar o continuar el trabajo. Nos movemos
+dentro del directorio.</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span> ejemplo_python
+</code></pre></div>
+
+
+<p>Vamos a modificar el archivo <code>app.py</code> que generamos anteriormente.</p>
+<div class="codehilite"><pre><span></span><code>vi app.py
+</code></pre></div>
+
+
+<p>[Imagen con la modificación]</p>
+<p>Y ademas vamos a crear un nuevo archivo <code>README.md</code> para agregarle documentación
+a nuestro proyecto.</p>
+<div class="codehilite"><pre><span></span><code>vi README.md
+</code></pre></div>
+
+
+<p>[Imagen de creación de readme]</p>
+<p>Ahora si ejecutamos <code>git status</code> veremos cuales fueron las modificaciones que
+aplicamos a nuestro repositorio local.</p>
+<p>[imagen de salida del git status]</p>
+<p>Para sumar estos cambios a git ejecutamos <code>git add</code>.</p>
+<div class="codehilite"><pre><span></span><code>git add .
+</code></pre></div>
+
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Recordar que con <code>git add .</code> lo que hacemos es agregar los cambios que
+hicimos para todos los archivos</p>
+</div>
+<p>Una vez que tenemos listos el grupo de cambios y queremos versionarlos creamos
+un nuevo commit.</p>
+<div class="codehilite"><pre><span></span><code><span class="err">git commit -m &quot;Modifico app y creación de README para documentación&quot;</span>
+</code></pre></div>
+
+
+<p>Ahora vamos a subir nuestros cambios.</p>
+<div class="codehilite"><pre><span></span><code>git push origin master
+</code></pre></div>
+
+
+<p>[Imagen de la subida de los nuesvos cambios]</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Tener en cuenta que no es necesario subir cada un commit, podemos acumular
+localmente una serie de commits para luego aplicar los cambios en el
+servidor</p>
+</div>
+<p>Ahora el servidor ya tiene nuestros nuevos cambios.</p>
                 
                   
                 
@@ -259,6 +559,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../instalar_python/" title="Instalar Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Instalar Python
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
