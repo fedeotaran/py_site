@@ -2,6 +2,7 @@ site_name: Python UNLP Documentación
 theme: 'material'
 nav:
   - Home: index.md
+  - Guía de Git: instalar_git.md
   - Instalar Python: instalar_python.md
   - Manejo de Paquetes: manejo_de_paquetes.md
   - Entornos virtuales: entornos_virtuales.md
