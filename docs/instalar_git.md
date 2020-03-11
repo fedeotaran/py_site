@@ -27,7 +27,7 @@ sudo yum install git
 brew install git
 ```
 
-### En windows
+### En Windows
 
 Descargar en instalar de [gitforwindows](https://gitforwindows.org/) o de
 [git-scm](https://git-scm.com/download/win). Tener en cuenta que en la cátedra
@@ -62,7 +62,7 @@ Ahora vamos a inicializar nuestro directorio como un directorio versionado por
 git init
 ```
 
-[Salida de comando git init]
+![Git init](img/1_git_init.png)
 
 Podemos ver que se creó en este directorio una carpeta oculta con el nombre
 `.git/`. Esto significa que este directirio está habilitado para ser versionado
@@ -72,7 +72,7 @@ con `Git`. Ya estamos listos para crear nuestro primer archivo.
 vi app.py
 ```
 
-[imagen del la edición]
+![Create app](img/2_create_app.png)
 
 Guardamos el archivo en el directorio de nuestro proyecto.
 
@@ -83,7 +83,7 @@ Guardamos el archivo en el directorio de nuestro proyecto.
 Ahora si ejecutamos `git status` vamos a ver que `Git` detecto que hay un nuevo
 archivo que aún no está versionado en nuestro directorio.
 
-[Imagen de un git status]
+![Git status](img/3_git_status.png)
 
 Para agregar este archivo al versionado de `Git` debemos hacer:
 
@@ -94,7 +94,7 @@ git add app.py
 Volvemos a ejecutar el comando `git status` para ver que información nos da
 `Git` ahora de este archivo.
 
-[Imagen de git status luego de hacer el add]
+![Git status2](img/4_git_status.png)
 
 Para hacer estos cambios efectivos es necesario crear un commit.
 
@@ -116,7 +116,7 @@ git commit -m "Creación de archivo inicial :smile:"
 En este momento tenemos el primer commit en nuestro repositorio local.
 Podemos ver la lista de todos nuestros commits con el comando `git log`.
 
-[Imagen de git log]
+![Git commit](img/6_git_commit_log.png)
 
 Ahora queremos compartir nuestro código y para esto es necesario subirlo a un
 repositorio remoto. Para esto es necesario [crear un nuevo repositorio en
@@ -126,11 +126,13 @@ repositorio remoto. Para esto es necesario [crear un nuevo repositorio en
     Tener en cuenta de **NO CREAR** el archivo `README.md` como sugiere la guía
     ya que va a complicar el subir nuestro código.
 
+    ![Git Create Repo](img/7_create_repo.png)
+
 Una vez creado el repositorio en `Github` tenemos que agregar ese repositorio
 remoto en nuestro repositorio `Git` local.
 
 ```bash
-git remote add origin 
+git remote add origin git@github.com:fedeotaran/ejemplo_python.git
 ```
 
 Ahora ya estamos listos para subir los commits con nuestros cambios.
@@ -141,7 +143,7 @@ git push -u origin master
 
 La salida de comando debería ser parecida a esta:
 
-[Imagen de la salida del push]
+![Git push](img/8_git_push.png)
 
 Ahora nuestro código ya esta subido al repositorio.
 
@@ -172,7 +174,7 @@ a la hora de ejecutar el comando `git clone`.
     Si queremos que la carpeta que genere sea con otro nombre distinta a la del
     repositorio hacemos:
 
-    ```bash
+    ```
     git clone https://github.com/fedeotaran/ejemplo_python.git otro_nombre
     ```
 
@@ -193,7 +195,7 @@ Vamos a modificar el archivo `app.py` que generamos anteriormente.
 vi app.py
 ```
 
-[Imagen con la modificación]
+![Edit App](img/9_edit_app.png)
 
 Y ademas vamos a crear un nuevo archivo `README.md` para agregarle documentación
 a nuestro proyecto.
@@ -202,12 +204,12 @@ a nuestro proyecto.
 vi README.md
 ```
 
-[Imagen de creación de readme]
+![Edit App](img/10_create_readme.png)
 
 Ahora si ejecutamos `git status` veremos cuales fueron las modificaciones que
 aplicamos a nuestro repositorio local.
 
-[imagen de salida del git status]
+![Status code](img/11_status.png)
 
 Para sumar estos cambios a git ejecutamos `git add`.
 
@@ -232,7 +234,7 @@ Ahora vamos a subir nuestros cambios.
 git push origin master
 ```
 
-[Imagen de la subida de los nuesvos cambios]
+![Push code](img/12_push.png)
 
 !!! info
     Tener en cuenta que no es necesario subir cada un commit, podemos acumular
