@@ -6,6 +6,12 @@ En la explicación práctica hablamos sobre los conceptos de git. Aquí están l
 
 ## Instalación
 
+!!! warning
+    Tener en cuenta que esta guía de instalación de git no hace falta si se
+    utilza la máquina virtual que entregamos en la cátedra para trabajar dado
+    que tiene todo instalado.
+    La máquina vistual la pueden descargar desde [aquí](https://catedras.info.unlp.edu.ar/mod/url/view.php?id=24366)
+
 ### En Debian-based
 
 ```bash

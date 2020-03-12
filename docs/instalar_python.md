@@ -1,6 +1,12 @@
 Instalación de Python
 =====================
 
+!!! warning
+    Tener en cuenta que esta guía de instalación de Python no hace falta si se
+    utilza la máquina virtual que entregamos en la cátedra para trabajar dado
+    que tiene todo instalado.
+    La máquina vistual la pueden descargar desde [aquí](https://catedras.info.unlp.edu.ar/mod/url/view.php?id=24366)
+
 En esta guía vamos a ver disintas formas de realizar la instalación de la
 la versión específica de Python que se utilizará en la cátedra para distintos
 sistemas operativos.
