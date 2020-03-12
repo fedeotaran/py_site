@@ -180,6 +180,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../comandos/" title="Comandos de consola" class="md-nav__link">
+      Comandos de consola
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -250,12 +262,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
+    Crear una cuenta de Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#como-usar-git" class="md-nav__link">
-    ¿Cómo usar git?
+    ¿Cómo usar Git?
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-informacion-en-git" class="md-nav__link">
+    Configurar información en Git
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#comenzar-un-repositorio-desde-cero" class="md-nav__link">
@@ -385,12 +411,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
+    Crear una cuenta de Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#como-usar-git" class="md-nav__link">
-    ¿Cómo usar git?
+    ¿Cómo usar Git?
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-informacion-en-git" class="md-nav__link">
+    Configurar información en Git
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#comenzar-un-repositorio-desde-cero" class="md-nav__link">
@@ -454,12 +494,29 @@ sudo yum install git
 <p>Descargar en instalar de <a href="https://gitforwindows.org/">gitforwindows</a> o de
 <a href="https://git-scm.com/download/win">git-scm</a>. Tener en cuenta que en la cátedra
 vamos a utilizar <code>GitBash</code> por lo cual deben asegurarse que se instale.</p>
-<h2 id="como-usar-git">¿Cómo usar git?<a class="headerlink" href="#como-usar-git" title="Permanent link">&para;</a></h2>
+<h2 id="crear-una-cuenta-de-github">Crear una cuenta de Github<a class="headerlink" href="#crear-una-cuenta-de-github" title="Permanent link">&para;</a></h2>
+<p>Para crear una cuenta tienen que entrar a la
+<a href="https://github.com/">web de Github</a> y regitrarse (Sing up).</p>
+<h2 id="como-usar-git">¿Cómo usar Git?<a class="headerlink" href="#como-usar-git" title="Permanent link">&para;</a></h2>
 <p>Vamos a ver dos formas para comenzar a trabajar con <code>Git</code>:</p>
 <ul>
 <li>Creando un repositorio desde cero y agregando los archivos iniciales.</li>
 <li>Descargando un proyecto ya creado y modificarlo.</li>
 </ul>
+<h3 id="configurar-informacion-en-git">Configurar información en Git<a class="headerlink" href="#configurar-informacion-en-git" title="Permanent link">&para;</a></h3>
+<p>En git cuando se va a realizar una operación para generar una nueva versión del
+código es necesario contar con información de usuario. Por esto es necesario que
+configuremos lo siguiente:</p>
+<div class="codehilite"><pre><span></span><code>$ git config --global user.name <span class="s2">&quot;John Doe&quot;</span>
+$ git config --global user.email johndoe@example.com
+</code></pre></div>
+
+
+<p>Para ver la configuración:</p>
+<div class="codehilite"><pre><span></span><code>git config --list
+</code></pre></div>
+
+
 <h3 id="comenzar-un-repositorio-desde-cero">Comenzar un repositorio desde cero<a class="headerlink" href="#comenzar-un-repositorio-desde-cero" title="Permanent link">&para;</a></h3>
 <p>Con git podemos versionar cualquier directorio/carpeta donde comencemos nuestro
 proyecto. Por eso en primer lugar lo que vamos a hacer es crear un directorio.</p>
@@ -643,7 +700,7 @@ servidor</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../comandos/" title="Comandos de consola" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -652,7 +709,7 @@ servidor</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Comandos de consola
               </span>
             </div>
           </a>
