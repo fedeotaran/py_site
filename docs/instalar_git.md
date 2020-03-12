@@ -33,12 +33,34 @@ Descargar en instalar de [gitforwindows](https://gitforwindows.org/) o de
 [git-scm](https://git-scm.com/download/win). Tener en cuenta que en la cátedra
 vamos a utilizar `GitBash` por lo cual deben asegurarse que se instale.
 
-## ¿Cómo usar git?
+## Crear una cuenta de Github
+
+Para crear una cuenta tienen que entrar a la
+[web de Github](https://github.com/) y regitrarse (Sing up).
+
+## ¿Cómo usar Git?
 
 Vamos a ver dos formas para comenzar a trabajar con `Git`:
 
 - Creando un repositorio desde cero y agregando los archivos iniciales.
 - Descargando un proyecto ya creado y modificarlo.
+
+### Configurar información en Git
+
+En git cuando se va a realizar una operación para generar una nueva versión del
+código es necesario contar con información de usuario. Por esto es necesario que
+configuremos lo siguiente:
+
+```bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+Para ver la configuración:
+
+```bash
+git config --list
+```
 
 ### Comenzar un repositorio desde cero
 
@@ -106,8 +128,6 @@ git commit -m "Creación de archivo inicial :smile:"
     Si tenemos una instalación nuevo de Git el sistema puede solicitar que
     configure mi nombre y mi mail para poder agregar esta información en el
     commit:
-
-    [imagen que pide la configuración]
 
     Lo que tenemos que hacer es ejecutar los comandos que nos sugiere pero con
     nuestros datos personales. Esto es simplemente para que queden nuestros
